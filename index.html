@@ -24,8 +24,8 @@
     margin-left: auto;
 }
 
-
-
+#ertyu{color: white;}
+#ertyu:hover{color: rgb(255, 200, 0);}
 
 
     </style>
@@ -40,20 +40,20 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active me-3 text-light" aria-current="page" href="#">HOME</a>
+            <a id="ertyu" class="nav-link active me-3 " aria-current="page" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active me-3 text-light" aria-current="page" href="#menus">MENU</a>
+            <a id="ertyu" class="nav-link active me-3" aria-current="page" href="#menus">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active me-3 text-light" aria-current="page" href="#weare">ABOUT</a>
+            <a id="ertyu" class="nav-link active me-3 " aria-current="page" href="#weare">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active me-3 text-light" aria-current="page" href="#tables">BOOK TABLE</a>
+            <a id="ertyu" class="nav-link active me-3 " aria-current="page" href="#tables">BOOK TABLE</a>
           </li>
           
         </ul>
-        <span style="margin-left: 200px;" >
+        <span id="ertyu" style="margin-left: 200px;" >
            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
         <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
         <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
@@ -63,19 +63,30 @@
       </div>
     </div>
   </nav>
+<style>
+  #dfer{
+    border-radius: 90%;
+    height: 20px;
+    width: 20px;
+   }
+  .carousel-indicators{
+   margin-bottom: 32%;
+   
 
+  }
+</style>
       
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button id="dfer" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button id="dfer" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button id="dfer" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <img src="https://images6.alphacoders.com/870/thumb-1920-870777.jpg" class="d-block " height="800px " width="100%" alt="...">
       <div class="carousel-item active">
 
-        <div style="margin-inline-start: 20%; margin-bottom: 33%;" class="carousel-caption ">
+        <div style="margin-inline-start: 20%; margin-bottom: 29%;" class="carousel-caption ">
           <h2>Fast Food Restaurant</h2>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatt eum  itaque commodi in tempore delectus provident, dolores similialias non voluptates tempore! Excepturi quas sapiente quos, culpa, exercitationem dolorum officia alias sequi ducimus ut quia ipsum incidunt numquam eaque saepe maiores!</p>
@@ -145,121 +156,260 @@
 </div>
 
 <style>
+
 .card img{height: 350px;}
 .card{width: 350px; margin: auto;}
 
+#qaasd .card-title{ text-align: center;
+}
+#qaasd .card{background-color: black;
+color: white;}
+#qaasd .card p .btn{
+  margin-left: 240px;
+}
+ /* Container for the image */
+ .image-container {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+        }
 
+        /* Actual image */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Overlay for hover effect */
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Text or additional content inside the overlay */
+        .overlay-content {
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Hover effect */
+        .image-container:hover .image-overlay {
+            opacity: 1;
+        }
+
+        /* Optional: Zoom in on hover */
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
 </style>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div id="qaasd" class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card">
-      <img src="https://www.ezcater.com/wp-content/uploads/2017/10/shutterstock_84904876.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://www.ezcater.com/wp-content/uploads/2017/10/shutterstock_84904876.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Delicious Pizza</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Delicious Pizza</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$12 <button style="border-radius: 50px; " type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col" id="fries">
     <div class="card">
-      <img src="https://blog.thermoworks.com/wp-content/uploads/2018/01/french_fry_final_shots-8-of-9.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://blog.thermoworks.com/wp-content/uploads/2018/01/french_fry_final_shots-8-of-9.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Crunchy Fries</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Crunchy Fries</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$15 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://th.bing.com/th/id/R.61bda1889c7b81b84d02d79ab652c133?rik=WrRa9vzT7kTyxA&riu=http%3a%2f%2fwww.aberdeenskitchen.com%2fwp-content%2fuploads%2f2015%2f06%2fsummertime-linguine-pasta-with-basil-and-cherry-tomatoes.jpg&ehk=lRYOSb%2b8dkmA8uVCsd%2fCbwwj7M60klUyv%2bza5OsZrs4%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://th.bing.com/th/id/R.61bda1889c7b81b84d02d79ab652c133?rik=WrRa9vzT7kTyxA&riu=http%3a%2f%2fwww.aberdeenskitchen.com%2fwp-content%2fuploads%2f2015%2f06%2fsummertime-linguine-pasta-with-basil-and-cherry-tomatoes.jpg&ehk=lRYOSb%2b8dkmA8uVCsd%2fCbwwj7M60klUyv%2bza5OsZrs4%3d&risl=&pid=ImgRaw&r=0" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Pasta</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Tasty Pasta</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$22 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://images7.alphacoders.com/596/596343.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://images7.alphacoders.com/596/596343.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Pizza</p>
+            </div>
+        </div>
+      </div>
+      
       <div class="card-body">
-        <h5 class="card-title">Tasty Pizza</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$17 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://i2.wp.com/wonkywonderful.com/wp-content/uploads/2017/09/italian-pasta-salad-recipe-2.jpg?ssl=1" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://i2.wp.com/wonkywonderful.com/wp-content/uploads/2017/09/italian-pasta-salad-recipe-2.jpg?ssl=1" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Pasta</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Tasty Pasta</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$11 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://www.yellowblissroad.com/wp-content/uploads/2020/06/Grilled-Hamburgers-Social.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://www.yellowblissroad.com/wp-content/uploads/2020/06/Grilled-Hamburgers-Social.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Burger</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Tasty Burger</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$16 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col" id="fries">
     <div class="card">
-      <img src="https://glutenfreecuppatea.co.uk/wp-content/uploads/2020/02/crispy-baked-french-fries-recipe-featured-2.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://glutenfreecuppatea.co.uk/wp-content/uploads/2020/02/crispy-baked-french-fries-recipe-featured-2.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Fries</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Tasty Fries</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$19 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://th.bing.com/th/id/R.9763b3c8210f21b946e031c5b7f470e6?rik=tAY7eVqMgwLHYQ&riu=http%3a%2f%2fwww.trbimg.com%2fimg-52fceb9c%2fturbine%2fsf-fiu-red-robin-burgers-contest-20140213&ehk=1gAcnUFvsTiXzIordvzLIGtFs84%2fpknSTfOGdwuwwUA%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://images.moneycontrol.com/static-mcnews/2021/03/Burger.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Delicious Burger</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Delicious Burger</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$09 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://th.bing.com/th/id/R.31ced005ef9276ea82761f463dc4563d?rik=iNGcurUvoyZUWg&riu=http%3a%2f%2fwww.thecomfortofcooking.com%2fwp-content%2fuploads%2f2016%2f04%2fItalianPastaSalad-1.jpg&ehk=UMs%2bf0%2fSSHsX4aXoXFtGbuIT%2fFiiN0spsj3iXM2L%2f9M%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://i.pinimg.com/originals/d8/f1/f2/d8f1f29222328dc317fa2b23695d7f77.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Delicious Pasta</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Delicious Pasta</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$14 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://assets.unileversolutions.com/recipes-v2/243142.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://assets.unileversolutions.com/recipes-v2/243142.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Spicy Fries</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Spicy Fries</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$06 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://th.bing.com/th/id/R.47e00e05f8d6528583202cd96e18992a?rik=h%2fdgUexj7W7KZg&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f20400000%2fPIZZA-pizza-20461160-1600-1200.jpg&ehk=Qw%2bjfQA1O8UbLkJhLixjt0h93BHTRzHfXScMqKg1h70%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://th.bing.com/th/id/R.47e00e05f8d6528583202cd96e18992a?rik=h%2fdgUexj7W7KZg&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f20400000%2fPIZZA-pizza-20461160-1600-1200.jpg&ehk=Qw%2bjfQA1O8UbLkJhLixjt0h93BHTRzHfXScMqKg1h70%3d&risl=&pid=ImgRaw&r=0" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Pizza</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Tasty Pizza</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat veritatis accusantium ab eligendi commodi doloremque deserunt animi minima nihil laudantium consequuntur a quibusdam praesentium minus, illo corrupti reprehenderit! Aliquam!</p>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$11 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="https://g.foolcdn.com/editorial/images/462740/red-robin-burger-gourmet-cheeseburger.jpg" class="card-img-top" alt="...">
+      <div class="image-container">
+        <img src="https://g.foolcdn.com/editorial/images/462740/red-robin-burger-gourmet-cheeseburger.jpg" width="100%" alt="Your Image">
+        <div class="image-overlay">
+            <div class="overlay-content">
+                <p>Tasty Burger</p>
+            </div>
+        </div>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Tasty Burger</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam animi optio tempora dolore esse? Natus doloribus sequi earum mollitia! Voluptas, laboriosam debitis. Ex pariatur repudiandae quia culpa, nam qui?</p>
+        <p>$12 <button style="border-radius: 50px;" type="button" class="btn btn-warning"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button></p>
       </div>
     </div>
   </div>
 </div>
+
+
 
 
 
@@ -319,26 +469,55 @@
 
       </div>
       <div class="col-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90510027704!2d78.24323428680985!3d17.412608639151458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1705508880436!5m2!1sen!2sin" width="500" height="350" style="border-radius: 10px; margin-left: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90510027704!2d78.24323428680985!3d17.412608639151458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1705508880436!5m2!1sen!2sin" width="600" height="350" style="border-radius: 10px; margin-left: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="col-1"></div>
     </div>
 <br><br><br>
     <h3 class="m-5">What Says Our Customers</h3>
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-5">
-        <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 15px;" class="container bg-secondary m-3 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur quae amet enim voluptate totam, dolorem expedita facere acium ullam. Deserunt repellat repudiandae minus, tempora sapiente unde nihil at totam animi prasimos officiis <h5 class="mt-2">qwertyu bbnh</h5> Magna gchvhjh
-        
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+              <div class="col-1"></div>
+              <div class="col-5">
+                <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 15px;" class="container bg-secondary m-3 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur quae amet enim voluptate totam, dolorem expedita facere acium ullam. Deserunt repellat repudiandae minus, tempora sapiente unde nihil at totam animi prasimos officiis <h5 class="mt-2">qwertyu bbnh</h5> Magna gchvhjh
+                
+              </div>
+              <img style="border-radius: 60%; border: 3px rgb(255, 221, 0) solid; margin-left: 150px;" src="https://th.bing.com/th/id/R.9f909e47ddfdd7ab255971b2575dcfb8?rik=8JdK90F8aI9J7Q&riu=http%3a%2f%2fwritestylesonline.com%2fwp-content%2fuploads%2f2016%2f08%2fFollow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg&ehk=at%2bW8ahmVDAWSjLun4vkjMUmmlvUD7psBtJ5Bf9jSfA%3d&risl=&pid=ImgRaw&r=0" height="100px" alt=""></div>
+              <div class="col-5">
+                <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 15px;" class="container bg-secondary m-3 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur quae amet enim voluptate totam, dolorem expedita facere acium ullam. Deserunt repellat repudiandae minus, tempora sapiente unde nihil at totam animi prasimos officiis <h5 class="mt-2">qwertyu bbnh</h5> Magna gchvhjh</div>
+                <img style="border-radius: 60%; border: 3px rgb(255, 221, 0) solid; margin-left: 150px;" src="https://i1.wp.com/shoprenewableenergy.com/wp-content/uploads/2020/02/cropped-portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004-scaled-1.jpg?ssl=1" height="100px" width="100px" alt=""></div>
+            
+              <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+              <div class="col-1"></div>
+              <div class="col-5">
+                <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 15px;" class="container bg-secondary m-3 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur quae amet enim voluptate totam, dolorem expedita facere acium ullam. Deserunt repellat repudiandae minus, tempora sapiente unde nihil at totam animi prasimos officiis <h5 class="mt-2">qwertyu bbnh</h5> Magna gchvhjh
+                
+              </div>
+              
+              <img style="border-radius: 60%; border: 3px rgb(255, 221, 0) solid; margin-left: 150px;" src="https://i1.wp.com/shoprenewableenergy.com/wp-content/uploads/2020/02/cropped-portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004-scaled-1.jpg?ssl=1" height="100px" width="100px" alt=""></div>
+              <div class="col-5">
+                <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 15px;" class="container bg-secondary m-3 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur quae amet enim voluptate totam, dolorem expedita facere acium ullam. Deserunt repellat repudiandae minus, tempora sapiente unde nihil at totam animi prasimos officiis <h5 class="mt-2">qwertyu bbnh</h5> Magna gchvhjh</div>
+                <img style="border-radius: 60%; border: 3px rgb(255, 221, 0) solid; margin-left: 150px;" src="https://th.bing.com/th/id/R.9f909e47ddfdd7ab255971b2575dcfb8?rik=8JdK90F8aI9J7Q&riu=http%3a%2f%2fwritestylesonline.com%2fwp-content%2fuploads%2f2016%2f08%2fFollow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg&ehk=at%2bW8ahmVDAWSjLun4vkjMUmmlvUD7psBtJ5Bf9jSfA%3d&risl=&pid=ImgRaw&r=0" height="100px" alt=""></div>
+            
+              <div class="col-1"></div>
+            </div>
       </div>
-      <img style="border-radius: 60%; border: 3px rgb(255, 221, 0) solid; margin-left: 150px;" src="https://th.bing.com/th/id/R.9f909e47ddfdd7ab255971b2575dcfb8?rik=8JdK90F8aI9J7Q&riu=http%3a%2f%2fwritestylesonline.com%2fwp-content%2fuploads%2f2016%2f08%2fFollow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg&ehk=at%2bW8ahmVDAWSjLun4vkjMUmmlvUD7psBtJ5Bf9jSfA%3d&risl=&pid=ImgRaw&r=0" height="100px" alt=""></div>
-      <div class="col-5">
-        <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 15px;" class="container bg-secondary m-3 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur quae amet enim voluptate totam, dolorem expedita facere acium ullam. Deserunt repellat repudiandae minus, tempora sapiente unde nihil at totam animi prasimos officiis <h5 class="mt-2">qwertyu bbnh</h5> Magna gchvhjh</div>
-        <img style="border-radius: 60%; border: 3px rgb(255, 221, 0) solid; margin-left: 150px;" src="https://i1.wp.com/shoprenewableenergy.com/wp-content/uploads/2020/02/cropped-portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004-scaled-1.jpg?ssl=1" height="100px" width="100px" alt=""></div>
-      </div>
-      </div>
-      <div class="col-1"></div>
+      <button id="dsasa" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button id="dsasa" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
 
 
 
